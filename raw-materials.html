@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title id="page-title">חומרי גלם | LUNA לונה</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="category.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div id="page-header"></div>
+
+  <!-- HERO -->
+  <div class="cat-hero" id="cat-hero">
+    <div class="cat-hero-overlay"></div>
+    <div class="cat-hero-content">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="index.html">ראשי</a>
+          <span class="sep"><i class="fa fa-chevron-left" style="font-size:10px"></i></span>
+          <span class="current" id="cat-title">חומרי גלם</span>
+        </nav>
+        <h1 id="cat-title">חומרי גלם</h1>
+        <p id="cat-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cat-layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-box">
+        <h3>סינון לפי מחיר</h3>
+        <div class="price-range-wrap">
+          <input type="range" class="price-range" id="price-slider" min="0" value="100"/>
+          <div class="price-labels">
+            <span>₪0</span>
+            <span id="price-max">₪100</span>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-box">
+        <h3>זמינות</h3>
+        <div class="filter-list">
+          <div class="filter-item active"><span>כל המוצרים</span></div>
+          <div class="filter-item"><span>במלאי</span></div>
+          <div class="filter-item"><span>מבצע</span></div>
+          <div class="filter-item"><span>חדש</span></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="cat-main">
+      <div id="subcat-pills" class="subcat-pills"></div>
+      <div class="cat-toolbar">
+        <div class="cat-count" id="prod-count"></div>
+        <select class="sort-select" id="sort-select">
+          <option value="default">מיון: ברירת מחדל</option>
+          <option value="price-asc">מחיר: נמוך לגבוה</option>
+          <option value="price-desc">מחיר: גבוה לנמוך</option>
+          <option value="rating">לפי דירוג</option>
+          <option value="popular">פופולריים</option>
+        </select>
+      </div>
+      <div class="products-grid-cat" id="products-grid"></div>
+    </main>
+  </div>
+
+  <div id="page-footer"></div>
+
+  <script src="/site-config.js"></script>
+  <script src="/products-data.js"></script>
+  <script src="components.js"></script>
+  <script src="category.js"></script>
+  <script>initCategoryPage('raw', 'raw');</script>
+</body>
+</html>

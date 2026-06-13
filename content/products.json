@@ -1,0 +1,763 @@
+[
+  {
+    "id": "chocolate-70",
+    "name": "שוקולד מריר בלגי 70%",
+    "category": "חומרי גלם",
+    "categoryPage": "raw-materials.html",
+    "categoryId": "raw",
+    "price": 32.9,
+    "oldPrice": 39.9,
+    "badge": "חדש",
+    "stars": 5,
+    "reviews": 48,
+    "image": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=900&q=80",
+      "https://images.unsplash.com/photo-1548907040-4baa42d10919?w=900&q=80"
+    ],
+    "sku": "CHO-001",
+    "weight": "500 גרם",
+    "description": "שוקולד מריר בלגי פרימיום עם 70% מוצקי קקאו. מיוצר מפולי קקאו איכותיים מאפריקה, בעל טעם עשיר ועמוק עם נגיעות פירותיות עדינות. מתאים להמסה, לציפוי עוגות, למוסים, לטראפלים ולכל יצירה שוקולדית.",
+    "ingredients": [
+      "מוצקי קקאו 70%",
+      "חמאת קקאו",
+      "סוכר קנה",
+      "ווניל טבעי",
+      "כשר לפסח"
+    ],
+    "specs": [
+      {
+        "label": "משקל",
+        "value": "500 גרם"
+      },
+      {
+        "label": "אחוז קקאו",
+        "value": "70%"
+      },
+      {
+        "label": "מוצא",
+        "value": "בלגיה"
+      },
+      {
+        "label": "כשרות",
+        "value": "כשר לפסח"
+      },
+      {
+        "label": "אחסון",
+        "value": "מקום קריר ויבש, 12-18°C"
+      }
+    ],
+    "tips": "להמסה: חממו בבן-מארי או במיקרוגל ב-30 שניות עם ערבוב בכל פעם."
+  },
+  {
+    "id": "cocoa-powder",
+    "name": "אבקת קקאו הולנדית 100%",
+    "category": "חומרי גלם",
+    "categoryPage": "raw-materials.html",
+    "categoryId": "raw",
+    "price": 24.5,
+    "badge": null,
+    "stars": 4,
+    "reviews": 31,
+    "image": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?w=900&q=80"
+    ],
+    "sku": "COC-002",
+    "weight": "250 גרם",
+    "description": "אבקת קקאו הולנדית מעובדת בתהליך Dutch-process, המעניקה צבע כהה עמוק וטעם קקאו חלק ופחות חמצמץ. מושלמת לעוגות, עוגיות, שייקים ואבקות חמות.",
+    "ingredients": [
+      "אבקת קקאו 100%",
+      "מעובד בשיטה הולנדית",
+      "ללא תוספי סוכר"
+    ],
+    "specs": [
+      {
+        "label": "משקל",
+        "value": "250 גרם"
+      },
+      {
+        "label": "שומן",
+        "value": "22-24%"
+      },
+      {
+        "label": "עיבוד",
+        "value": "Dutch Process"
+      },
+      {
+        "label": "כשרות",
+        "value": "כשר"
+      }
+    ],
+    "tips": "הוסיפו לקמח יחד עם החומרים היבשים. לשתייה חמה: ערבבו עם מעט מים קרים לפני הוספת החלב החם."
+  },
+  {
+    "id": "vanilla-extract",
+    "name": "תמצית וניל טבעית מדגסקר",
+    "category": "חומרי גלם",
+    "categoryPage": "raw-materials.html",
+    "categoryId": "raw",
+    "price": 18.9,
+    "oldPrice": 26,
+    "badge": "מבצע",
+    "stars": 5,
+    "reviews": 67,
+    "image": "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=900&q=80"
+    ],
+    "sku": "VAN-003",
+    "weight": "100 מ\"ל",
+    "description": "תמצית וניל טבעית טהורה מקצועית, מיוצרת מתרמילי וניל ממדגסקר. ריח ותמונה עשירים ואותנטיים שלא יושגו עם תחליפים.",
+    "ingredients": [
+      "מים",
+      "מיצוי תרמילי וניל (מדגסקר) 35%",
+      "אלכוהול 35%"
+    ],
+    "specs": [
+      {
+        "label": "נפח",
+        "value": "100 מ\"ל"
+      },
+      {
+        "label": "מוצא",
+        "value": "מדגסקר"
+      },
+      {
+        "label": "ריכוז",
+        "value": "X2 (כפול)"
+      },
+      {
+        "label": "כשרות",
+        "value": "כשר"
+      }
+    ],
+    "tips": "כמות מומלצת: 1 כפית לכל 12 קאפקייקס."
+  },
+  {
+    "id": "brown-sugar",
+    "name": "סוכר חום דמררה 1 ק\"ג",
+    "category": "חומרי גלם",
+    "categoryPage": "raw-materials.html",
+    "categoryId": "raw",
+    "price": 14.9,
+    "badge": null,
+    "stars": 4,
+    "reviews": 22,
+    "image": "https://images.unsplash.com/photo-1612200564368-0e90cba86c7b?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1612200564368-0e90cba86c7b?w=900&q=80"
+    ],
+    "sku": "SUG-004",
+    "weight": "1 ק\"ג",
+    "description": "סוכר קנה חום דמררה בעל גבישים גסים וטעם קרמלי עדין.",
+    "ingredients": [
+      "סוכר קנה חום 100% טבעי",
+      "ללא תוספים ומשמרים"
+    ],
+    "specs": [
+      {
+        "label": "משקל",
+        "value": "1 ק\"ג"
+      },
+      {
+        "label": "סוג",
+        "value": "דמררה"
+      },
+      {
+        "label": "מוצא",
+        "value": "ברזיל"
+      }
+    ],
+    "tips": "לקרמבל מושלם: ערבבו 1 כוס סוכר + 80 גרם חמאה + 1 כוס קמח."
+  },
+  {
+    "id": "flour-t55",
+    "name": "קמח לבן T55 מיוחד לפטיסרי",
+    "category": "חומרי גלם",
+    "categoryPage": "raw-materials.html",
+    "categoryId": "raw",
+    "price": 19.9,
+    "badge": null,
+    "stars": 5,
+    "reviews": 54,
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&q=80"
+    ],
+    "sku": "FLR-005",
+    "weight": "1 ק\"ג",
+    "description": "קמח חיטה לבן מסוג T55 הצרפתי, מיועד במיוחד לפטיסרי ואפייה מדויקת.",
+    "ingredients": [
+      "קמח חיטה T55",
+      "ויטמין B1",
+      "ויטמין B3",
+      "חומצה פולית"
+    ],
+    "specs": [
+      {
+        "label": "משקל",
+        "value": "1 ק\"ג"
+      },
+      {
+        "label": "סוג",
+        "value": "T55"
+      },
+      {
+        "label": "חלבון",
+        "value": "10.5-11.5%"
+      },
+      {
+        "label": "כשרות",
+        "value": "כשר לפסח"
+      }
+    ],
+    "tips": "נפו תמיד לפני השימוש לקבלת מרקם אוורירי."
+  },
+  {
+    "id": "food-colors",
+    "name": "סט צבעי מאכל ג'ל 12 צבעים",
+    "category": "חומרי גלם",
+    "categoryPage": "raw-materials.html",
+    "categoryId": "raw",
+    "price": 59.9,
+    "oldPrice": 79.9,
+    "badge": "חדש",
+    "stars": 5,
+    "reviews": 89,
+    "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=900&q=80"
+    ],
+    "sku": "CLR-006",
+    "weight": "סט 12 × 20 גרם",
+    "description": "סט מקצועי של 12 צבעי מאכל בג'ל, ריכוז גבוה הדורש כמות קטנה מאוד.",
+    "ingredients": [
+      "מים",
+      "גליצרין",
+      "צבעי מאכל מאושרים",
+      "שומרים: E211"
+    ],
+    "specs": [
+      {
+        "label": "כמות",
+        "value": "12 גוונים"
+      },
+      {
+        "label": "נפח כל בקבוק",
+        "value": "20 גרם"
+      },
+      {
+        "label": "סוג",
+        "value": "ג'ל ריכוזי"
+      },
+      {
+        "label": "כשרות",
+        "value": "כשר"
+      }
+    ],
+    "tips": "השתמשו בכמות קטנה — הצבע ריכוזי מאוד."
+  },
+  {
+    "id": "round-pan-24",
+    "name": "תבנית עגולה 24 ס\"מ נון-סטיק",
+    "category": "כלי עבודה",
+    "categoryPage": "tools.html",
+    "categoryId": "tools",
+    "price": 49.9,
+    "badge": null,
+    "stars": 5,
+    "reviews": 112,
+    "image": "https://images.unsplash.com/photo-1585515320310-259814833e62?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1585515320310-259814833e62?w=900&q=80"
+    ],
+    "sku": "PAN-001",
+    "weight": "680 גרם",
+    "description": "תבנית אפייה עגולה 24 ס\"מ עם ציפוי נון-סטיק כפול, תחתית נשלפת לשחרור קל.",
+    "ingredients": [
+      "פלדת פחמן",
+      "ציפוי PTFE כפול",
+      "תחתית נשלפת"
+    ],
+    "specs": [
+      {
+        "label": "קוטר",
+        "value": "24 ס\"מ"
+      },
+      {
+        "label": "גובה",
+        "value": "7 ס\"מ"
+      },
+      {
+        "label": "חומר",
+        "value": "פלדת פחמן"
+      },
+      {
+        "label": "ציפוי",
+        "value": "נון-סטיק כפול"
+      },
+      {
+        "label": "עמידות חום",
+        "value": "עד 240°C"
+      }
+    ],
+    "tips": "משחו קלות בחמאה גם עם ציפוי נון-סטיק לשחרור מושלם."
+  },
+  {
+    "id": "silicone-rolling",
+    "name": "מערוך סיליקון אנטי-דבק",
+    "category": "כלי עבודה",
+    "categoryPage": "tools.html",
+    "categoryId": "tools",
+    "price": 34.9,
+    "oldPrice": 44.9,
+    "badge": "מבצע",
+    "stars": 4,
+    "reviews": 38,
+    "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=900&q=80"
+    ],
+    "sku": "TLS-002",
+    "weight": "320 גרם",
+    "description": "מערוך סיליקון באיכות מקצועית עם ידיות ארגונומיות. משטח אנטי-דבק המונע הידבקות בצק. מתאים לבצק פריך, בצק סוכר, פונדנט ועוגיות.",
+    "ingredients": [
+      "סיליקון מאכלי דרגה A",
+      "ידיות PP",
+      "BPA Free"
+    ],
+    "specs": [
+      {
+        "label": "אורך",
+        "value": "38 ס\"מ"
+      },
+      {
+        "label": "קוטר",
+        "value": "5 ס\"מ"
+      },
+      {
+        "label": "חומר",
+        "value": "סיליקון מאכלי"
+      },
+      {
+        "label": "טמפרטורה",
+        "value": "-40°C עד 220°C"
+      }
+    ],
+    "tips": "פזרו מעט קמח על המשטח לתוצאה מיטבית. ניתן לנקות במדיח כלים."
+  },
+  {
+    "id": "piping-bags",
+    "name": "שקיות זילוף חד פעמיות 100 יח'",
+    "category": "כלי עבודה",
+    "categoryPage": "tools.html",
+    "categoryId": "tools",
+    "price": 22.9,
+    "badge": null,
+    "stars": 5,
+    "reviews": 201,
+    "image": "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=900&q=80"
+    ],
+    "sku": "ZLF-003",
+    "weight": "120 גרם",
+    "description": "שקיות זילוף חד-פעמיות בגודל 35 ס\"מ, עבות ועמידות לפיצוץ.",
+    "ingredients": [
+      "פוליאתילן עובי 0.06 מ\"מ",
+      "BPA Free",
+      "עמיד לחום עד 60°C"
+    ],
+    "specs": [
+      {
+        "label": "כמות",
+        "value": "100 יח'"
+      },
+      {
+        "label": "אורך",
+        "value": "35 ס\"מ"
+      },
+      {
+        "label": "חומר",
+        "value": "PE"
+      }
+    ],
+    "tips": "הכניסו את הפייה לפני מילוי השקית."
+  },
+  {
+    "id": "piping-tips",
+    "name": "סט פיות זילוף נירוסטה 24 יח'",
+    "category": "כלי עבודה",
+    "categoryPage": "tools.html",
+    "categoryId": "tools",
+    "price": 67.9,
+    "badge": null,
+    "stars": 5,
+    "reviews": 76,
+    "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=900&q=80"
+    ],
+    "sku": "ZLF-004",
+    "weight": "250 גרם",
+    "description": "סט מקצועי של 24 פיות זילוף מנירוסטה 304, כולל פיות כוכב, עגולות, שושן ועוד.",
+    "ingredients": [
+      "נירוסטה 304 (18/8)",
+      "עובי 0.6 מ\"מ",
+      "ללא BPA"
+    ],
+    "specs": [
+      {
+        "label": "כמות",
+        "value": "24 פיות"
+      },
+      {
+        "label": "חומר",
+        "value": "נירוסטה 304"
+      },
+      {
+        "label": "שטיפה",
+        "value": "מדיח כלים"
+      }
+    ],
+    "tips": "הרטיבו קלות בפייה לפני זילוף קרם חמאה לתוצאה חלקה יותר."
+  },
+  {
+    "id": "silicone-spatula",
+    "name": "מרית סיליקון עמידה לחום",
+    "category": "כלי עבודה",
+    "categoryPage": "tools.html",
+    "categoryId": "tools",
+    "price": 16.9,
+    "badge": null,
+    "stars": 4,
+    "reviews": 44,
+    "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=900&q=80"
+    ],
+    "sku": "TLS-005",
+    "weight": "85 גרם",
+    "description": "מרית סיליקון גמישה עם ידית ארגונומית, עמידה לחום עד 220°C. מושלמת לקיפול בצקים עדינים, ריקון קערות ועבודה עם מסות חמות.",
+    "ingredients": [
+      "סיליקון מאכלי",
+      "ידית נירוסטה/PP",
+      "BPA Free"
+    ],
+    "specs": [
+      {
+        "label": "אורך",
+        "value": "28 ס\"מ"
+      },
+      {
+        "label": "עמידות חום",
+        "value": "עד 220°C"
+      },
+      {
+        "label": "חומר",
+        "value": "סיליקון + נירוסטה"
+      }
+    ],
+    "tips": "מושלמת לקיפול חלבונים מוקצפים לבלילה — תנועות קיפול עדינות מלמטה למעלה."
+  },
+  {
+    "id": "cookie-cutters",
+    "name": "סט חותכני עוגיות 20 צורות",
+    "category": "כלי עבודה",
+    "categoryPage": "tools.html",
+    "categoryId": "tools",
+    "price": 39.9,
+    "oldPrice": 54.9,
+    "badge": "חדש",
+    "stars": 5,
+    "reviews": 93,
+    "image": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=900&q=80"
+    ],
+    "sku": "TLS-006",
+    "weight": "280 גרם",
+    "description": "סט 20 חותכנים לעוגיות מנירוסטה — כוכבים, לבבות, עיגולים, פרחים ועוד.",
+    "ingredients": [
+      "נירוסטה 201",
+      "גובה 3 ס\"מ",
+      "קצוות מחוזקים"
+    ],
+    "specs": [
+      {
+        "label": "כמות",
+        "value": "20 חותכנים"
+      },
+      {
+        "label": "חומר",
+        "value": "נירוסטה"
+      },
+      {
+        "label": "גובה",
+        "value": "3 ס\"מ"
+      }
+    ],
+    "tips": "טבלו קלות בקמח לפני כל חיתוך למניעת הידבקות."
+  },
+  {
+    "id": "cake-box-25",
+    "name": "קופסת עוגה לבנה עם חלון 25×25",
+    "category": "אריזות",
+    "categoryPage": "packaging.html",
+    "categoryId": "packaging",
+    "price": 8.9,
+    "badge": null,
+    "stars": 5,
+    "reviews": 88,
+    "image": "https://images.unsplash.com/photo-1562440499-64a3f0c30c5d?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1562440499-64a3f0c30c5d?w=900&q=80"
+    ],
+    "sku": "PKG-001",
+    "weight": "קרטון 350 גרם",
+    "description": "קופסת עוגה לבנה יוקרתית עם חלון PET שקוף. קרטון עמיד 350 גרם עם גימור מבריק.",
+    "ingredients": [
+      "קרטון לבן 350 גרם",
+      "חלון PET שקוף",
+      "ממוחזר חלקית"
+    ],
+    "specs": [
+      {
+        "label": "מידות",
+        "value": "25×25×12 ס\"מ"
+      },
+      {
+        "label": "חומר",
+        "value": "קרטון 350 גרם"
+      },
+      {
+        "label": "כמות באריזה",
+        "value": "10 יחידות"
+      }
+    ],
+    "tips": "מתאים לעוגות עד גובה 10 ס\"מ."
+  },
+  {
+    "id": "cupcake-box-6",
+    "name": "קופסת 6 קאפקייקס עם מגש",
+    "category": "אריזות",
+    "categoryPage": "packaging.html",
+    "categoryId": "packaging",
+    "price": 6.5,
+    "oldPrice": 9.9,
+    "badge": "מבצע",
+    "stars": 4,
+    "reviews": 52,
+    "image": "https://images.unsplash.com/photo-1587668178277-295251f900ce?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1587668178277-295251f900ce?w=900&q=80"
+    ],
+    "sku": "PKG-002",
+    "weight": "קרטון 300 גרם",
+    "description": "קופסת קאפקייקס ל-6 יחידות עם מגש פלסטיק ב-6 תאים וחלון שקוף.",
+    "ingredients": [
+      "קרטון לבן 300 גרם",
+      "מגש PET שקוף",
+      "ידית נשיאה"
+    ],
+    "specs": [
+      {
+        "label": "מידות",
+        "value": "26×18×10 ס\"מ"
+      },
+      {
+        "label": "קיבולת",
+        "value": "6 קאפקייקס"
+      },
+      {
+        "label": "כמות באריזה",
+        "value": "10 יחידות"
+      }
+    ],
+    "tips": "מתאים לקאפקייקס בקוטר עד 5.5 ס\"מ."
+  },
+  {
+    "id": "silver-board-30",
+    "name": "מגש כסוף עגול 30 ס\"מ – 10 יח'",
+    "category": "אריזות",
+    "categoryPage": "packaging.html",
+    "categoryId": "packaging",
+    "price": 22.9,
+    "badge": null,
+    "stars": 5,
+    "reviews": 143,
+    "image": "https://images.unsplash.com/photo-1607478900766-efe13248b125?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1607478900766-efe13248b125?w=900&q=80"
+    ],
+    "sku": "PKG-003",
+    "weight": "קרטון 3 מ\"מ",
+    "description": "מגש עגול בציפוי כסוף מבריק, עובי 3 מ\"מ. עמיד ומחוזק לנשיאת עוגות כבדות.",
+    "ingredients": [
+      "קרטון מחוזק 3 מ\"מ",
+      "ציפוי כסוף מבריק",
+      "עמיד ללחות"
+    ],
+    "specs": [
+      {
+        "label": "קוטר",
+        "value": "30 ס\"מ"
+      },
+      {
+        "label": "עובי",
+        "value": "3 מ\"מ"
+      },
+      {
+        "label": "כמות",
+        "value": "10 יח'"
+      }
+    ],
+    "tips": "הדביקו מעט קצפת בתחתית העוגה כדי לקבע אותה למגש."
+  },
+  {
+    "id": "satin-ribbon",
+    "name": "סרט סאטן 5 ס\"מ – 9 מטר",
+    "category": "אריזות",
+    "categoryPage": "packaging.html",
+    "categoryId": "packaging",
+    "price": 12.9,
+    "badge": null,
+    "stars": 4,
+    "reviews": 29,
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1547592180-85f173990554?w=900&q=80"
+    ],
+    "sku": "PKG-004",
+    "weight": "65 גרם",
+    "description": "סרט סאטן איכותי ברוחב 5 ס\"מ, גליל 9 מטר. ברק גבוה ומרקם חלק. זמין בצבעים: לבן, שמפניה, ורוד, כחול, אדום וזהב.",
+    "ingredients": [
+      "100% פוליאסטר",
+      "ברק סאטן גבוה",
+      "קצוות מסוגלים"
+    ],
+    "specs": [
+      {
+        "label": "רוחב",
+        "value": "5 ס\"מ"
+      },
+      {
+        "label": "אורך",
+        "value": "9 מטר"
+      },
+      {
+        "label": "חומר",
+        "value": "פוליאסטר סאטן"
+      },
+      {
+        "label": "צבעים",
+        "value": "לבן / שמפניה / ורוד / כחול / זהב"
+      }
+    ],
+    "tips": "לקשירת פפיון מקצועי: השאירו קצה של 30 ס\"מ וקפלו לולאות שוות."
+  },
+  {
+    "id": "cello-bags",
+    "name": "שקיות סלופן מעוטרות 50 יח'",
+    "category": "אריזות",
+    "categoryPage": "packaging.html",
+    "categoryId": "packaging",
+    "price": 18.9,
+    "badge": "חדש",
+    "stars": 5,
+    "reviews": 67,
+    "image": "https://images.unsplash.com/photo-1605792657660-596af9009e82?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1605792657660-596af9009e82?w=900&q=80"
+    ],
+    "sku": "PKG-005",
+    "weight": "90 גרם",
+    "description": "שקיות סלופן שקופות עם הדפס פרחים עדין. מושלמות לעטיפת עוגיות, ממתקים, עוגות בגביע וסלסלות מתנה. נסגרות בסרט או גומי.",
+    "ingredients": [
+      "OPP 30 מיקרון",
+      "הדפס פרחים",
+      "ניתן לאטימה בחום"
+    ],
+    "specs": [
+      {
+        "label": "כמות",
+        "value": "50 יח'"
+      },
+      {
+        "label": "מידות",
+        "value": "20×30 ס\"מ"
+      },
+      {
+        "label": "עובי",
+        "value": "30 מיקרון"
+      },
+      {
+        "label": "פתיחה",
+        "value": "מלמעלה"
+      }
+    ],
+    "tips": "לאטימה מושלמת השתמשו בסוגר חום (heat sealer) או פשוט קשרו עם סרט."
+  },
+  {
+    "id": "baking-paper",
+    "name": "נייר אפייה מגולגל 50 מטר",
+    "category": "אריזות",
+    "categoryPage": "packaging.html",
+    "categoryId": "packaging",
+    "price": 24.9,
+    "badge": null,
+    "stars": 5,
+    "reviews": 201,
+    "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=900&q=80"
+    ],
+    "sku": "PKG-006",
+    "weight": "320 גרם",
+    "description": "נייר אפייה סיליקוני שני-צדדי ברוחב 38 ס\"מ, גליל 50 מטר. עמיד לחום עד 230°C.",
+    "ingredients": [
+      "נייר סיליקוני",
+      "ציפוי PTFE דו-צדדי",
+      "ללא כלור"
+    ],
+    "specs": [
+      {
+        "label": "אורך",
+        "value": "50 מטר"
+      },
+      {
+        "label": "רוחב",
+        "value": "38 ס\"מ"
+      },
+      {
+        "label": "עמידות חום",
+        "value": "עד 230°C"
+      }
+    ],
+    "tips": "ניתן לשימוש חוזר עד 5 פעמים כשמנקים בזהירות."
+  },
+  {
+    "id": "prod-1781362958669",
+    "name": "מלח לימון איכותי",
+    "price": 12,
+    "oldPrice": 15,
+    "badge": null,
+    "stars": 5,
+    "reviews": 0,
+    "sku": "1123",
+    "weight": "100 גרם",
+    "image": "https://hahishook.com/wp-content/uploads/2026/02/7290002050179-lemon-salt-1kg-new.jpg",
+    "images": [
+      "https://hahishook.com/wp-content/uploads/2026/02/7290002050179-lemon-salt-1kg-new.jpg"
+    ],
+    "description": "<p>מלח לימון - ללא חומרים משמרים</p>",
+    "ingredients": [
+      "מלח לימון משובח"
+    ],
+    "tips": "כדאי להשרות במים פושרים",
+    "categoryId": "raw",
+    "category": "חומרי גלם",
+    "categoryPage": "raw-materials.html"
+  }
+]

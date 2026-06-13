@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUNA | לונה - עולם של אפייה</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- CMS config: served dynamically from content/content.json -->
+  <script src="/site-config.js"></script>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <span><i class="fa fa-truck"></i> משלוח חינם בקנייה מעל ₪250</span>
+    <span><i class="fa fa-phone"></i> 03-1234567</span>
+    <span><i class="fa fa-clock"></i> א'-ה' 09:00–18:00</span>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner container">
+      <div class="logo">
+        <span class="logo-icon">🎂</span>
+        <div class="logo-text">
+          <span class="logo-main">לונה</span>
+          <span class="logo-sub">עולם של אפייה</span>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <a href="raw-materials.html">חומרי גלם <i class="fa fa-chevron-down"></i></a>
+            <div class="dropdown">
+              <a href="raw-materials.html">כל חומרי הגלם</a>
+              <a href="raw-materials.html">שוקולד וציפויים</a>
+              <a href="raw-materials.html">קמחים וסולת</a>
+              <a href="raw-materials.html">סוכר ומתיקים</a>
+              <a href="raw-materials.html">צבעי מאכל</a>
+              <a href="raw-materials.html">תמציות וניל</a>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="tools.html">כלי עבודה <i class="fa fa-chevron-down"></i></a>
+            <div class="dropdown">
+              <a href="tools.html">כל הכלים</a>
+              <a href="tools.html">תבניות אפייה</a>
+              <a href="tools.html">שקיות זילוף</a>
+              <a href="tools.html">פיות זילוף</a>
+              <a href="tools.html">קוצצים וחותכנים</a>
+              <a href="tools.html">מערוכים ומשטחים</a>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="packaging.html">אריזות <i class="fa fa-chevron-down"></i></a>
+            <div class="dropdown">
+              <a href="packaging.html">כל האריזות</a>
+              <a href="packaging.html">קופסאות לעוגות</a>
+              <a href="packaging.html">קופסאות לקאפקייקס</a>
+              <a href="packaging.html">ניירות ורדיד</a>
+              <a href="packaging.html">מגשים ובסיסים</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="recipes.html">מתכונים</a>
+          </li>
+          <li class="nav-item">
+            <a href="#sale" class="sale-link">מבצעים 🔥</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="search-toggle" aria-label="חיפוש">
+          <i class="fa fa-search"></i>
+        </button>
+        <button class="icon-btn" aria-label="מועדפים">
+          <i class="fa fa-heart"></i>
+        </button>
+        <button class="icon-btn cart-btn" aria-label="סל קניות">
+          <i class="fa fa-shopping-cart"></i>
+          <span class="cart-count">3</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="תפריט">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- SEARCH BAR -->
+    <div class="search-bar" id="search-bar">
+      <div class="container">
+        <input type="text" placeholder="חפש מוצרים, מתכונים..." />
+        <button><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=1600&q=80')">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+          <span class="hero-badge">חדש באתר</span>
+          <h1>עולם שלם של אפייה<br/>במקום אחד</h1>
+          <p>חומרי גלם איכותיים, כלי עבודה מקצועיים ואריזות מרהיבות</p>
+          <div class="hero-btns">
+            <a href="#categories" class="btn btn-primary">לקטלוג המוצרים</a>
+            <a href="#recipes" class="btn btn-outline">מתכונים בחינם</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=1600&q=80')">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+          <span class="hero-badge">מבצע השבוע</span>
+          <h1>שוקולד ואבקות<br/>במחירים מיוחדים</h1>
+          <p>עד 30% הנחה על מבחר חומרי גלם נבחרים</p>
+          <div class="hero-btns">
+            <a href="#sale" class="btn btn-primary">למבצעים</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1491821893533-80f535044695?w=1600&q=80')">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+          <span class="hero-badge">אריזות</span>
+          <h1>אריזות לעוגות<br/>מעוצבות ואלגנטיות</h1>
+          <p>קופסאות, מגשים ורדידים לכל אירוע</p>
+          <div class="hero-btns">
+            <a href="#packaging" class="btn btn-primary">לאריזות</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-dots">
+      <button class="dot active" data-slide="0"></button>
+      <button class="dot" data-slide="1"></button>
+      <button class="dot" data-slide="2"></button>
+    </div>
+    <button class="hero-arrow hero-prev"><i class="fa fa-chevron-right"></i></button>
+    <button class="hero-arrow hero-next"><i class="fa fa-chevron-left"></i></button>
+  </section>
+
+  <!-- TRUST BADGES -->
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <i class="fa fa-truck"></i>
+        <div>
+          <strong>משלוח מהיר</strong>
+          <span>עד 3 ימי עסקים</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <i class="fa fa-shield-alt"></i>
+        <div>
+          <strong>תשלום מאובטח</strong>
+          <span>הצפנת SSL מלאה</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <i class="fa fa-rotate-left"></i>
+        <div>
+          <strong>החזרות קלות</strong>
+          <span>עד 14 יום מהרכישה</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <i class="fa fa-headset"></i>
+        <div>
+          <strong>שירות לקוחות</strong>
+          <span>זמין בטלפון ובוואטסאפ</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CATEGORIES -->
+  <section class="categories section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <h2>קטגוריות ראשיות</h2>
+        <p>כל מה שאפייה מקצועית דורשת</p>
+      </div>
+      <div class="categories-grid">
+        <a href="raw-materials.html" class="cat-card cat-large">
+          <img src="https://images.unsplash.com/photo-1606312619070-d48b8c7c9da5?w=600&q=80" alt="חומרי גלם" />
+          <div class="cat-overlay">
+            <h3>חומרי גלם</h3>
+            <span>שוקולד, קמחים, סוכר ועוד</span>
+          </div>
+        </a>
+        <a href="tools.html" class="cat-card">
+          <img src="https://images.unsplash.com/photo-1556909172-8c2f041fca1e?w=600&q=80" alt="כלי עבודה" />
+          <div class="cat-overlay">
+            <h3>כלי עבודה</h3>
+            <span>תבניות, שקיות זילוף ועוד</span>
+          </div>
+        </a>
+        <a href="packaging.html" class="cat-card">
+          <img src="https://images.unsplash.com/photo-1559181567-c3190bba5ae0?w=600&q=80" alt="אריזות" />
+          <div class="cat-overlay">
+            <h3>אריזות לעוגות</h3>
+            <span>קופסאות, מגשים, סלופן</span>
+          </div>
+        </a>
+        <a href="recipes.html" class="cat-card">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80" alt="מתכונים" />
+          <div class="cat-overlay">
+            <h3>מתכונים</h3>
+            <span>מאות מתכונים בחינם</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS - RAW MATERIALS -->
+  <section class="products section" id="raw-materials">
+    <div class="container">
+      <div class="section-header">
+        <h2>חומרי גלם פופולריים</h2>
+        <a href="raw-materials.html" class="see-all">לכל המוצרים <i class="fa fa-arrow-left"></i></a>
+      </div>
+      <div class="products-grid" id="raw-grid"></div>
+    </div>
+  </section>
+
+  <!-- BANNER -->
+  <section class="mid-banner" id="sale">
+    <div class="mid-banner-inner" style="background-image: url('https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=1400&q=80')">
+      <div class="mid-banner-overlay"></div>
+      <div class="container mid-banner-content">
+        <span class="hero-badge">מבצע מוגבל בזמן</span>
+        <h2>עד 30% הנחה על אריזות לעוגות</h2>
+        <p>מבחר רחב של קופסאות, מגשים וסלופן בעיצובים מרהיבים</p>
+        <a href="#packaging" class="btn btn-primary">קנה עכשיו</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="products section" id="tools">
+    <div class="container">
+      <div class="section-header">
+        <h2>כלי עבודה ועזרים לאפייה</h2>
+        <a href="tools.html" class="see-all">לכל הכלים <i class="fa fa-arrow-left"></i></a>
+      </div>
+      <div class="products-grid" id="tools-grid">
+        <!-- dynamically loaded from products-data.js -->
+        <div class="product-card" style="display:none">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1585515320310-259814833e62?w=400&q=80" alt="תבנית" />
+            <div class="product-actions">
+              <button class="pact-btn"><i class="fa fa-heart"></i></button>
+              <button class="pact-btn" onclick="addToCart(this)"><i class="fa fa-cart-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">תבניות</span>
+            <h4>תבנית עגולה 24 ס"מ נון-סטיק</h4>
+            <div class="stars">★★★★★ <span>(112)</span></div>
+            <div class="product-price"><span class="price">₪49.90</span></div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge">מבצע</div>
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=80" alt="מערוך" />
+            <div class="product-actions">
+              <button class="pact-btn"><i class="fa fa-heart"></i></button>
+              <button class="pact-btn" onclick="addToCart(this)"><i class="fa fa-cart-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">כלי עבודה</span>
+            <h4>מערוך סיליקון אנטי-דבק</h4>
+            <div class="stars">★★★★☆ <span>(38)</span></div>
+            <div class="product-price">
+              <span class="price">₪34.90</span>
+              <span class="price-old">₪44.90</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=400&q=80" alt="שקית זילוף" />
+            <div class="product-actions">
+              <button class="pact-btn"><i class="fa fa-heart"></i></button>
+              <button class="pact-btn" onclick="addToCart(this)"><i class="fa fa-cart-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">זילוף</span>
+            <h4>שקיות זילוף חד פעמיות 100 יח'</h4>
+            <div class="stars">★★★★★ <span>(201)</span></div>
+            <div class="product-price"><span class="price">₪22.90</span></div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&q=80" alt="פיית זילוף" />
+            <div class="product-actions">
+              <button class="pact-btn"><i class="fa fa-heart"></i></button>
+              <button class="pact-btn" onclick="addToCart(this)"><i class="fa fa-cart-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">זילוף</span>
+            <h4>סט פיות זילוף נירוסטה 24 יח'</h4>
+            <div class="stars">★★★★★ <span>(76)</span></div>
+            <div class="product-price"><span class="price">₪67.90</span></div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=400&q=80" alt="מיקסר" />
+            <div class="product-actions">
+              <button class="pact-btn"><i class="fa fa-heart"></i></button>
+              <button class="pact-btn" onclick="addToCart(this)"><i class="fa fa-cart-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">מכשירים</span>
+            <h4>מרית סיליקון עמידה לחום</h4>
+            <div class="stars">★★★★☆ <span>(44)</span></div>
+            <div class="product-price"><span class="price">₪16.90</span></div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge">חדש</div>
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=400&q=80" alt="קוצצן" />
+            <div class="product-actions">
+              <button class="pact-btn"><i class="fa fa-heart"></i></button>
+              <button class="pact-btn" onclick="addToCart(this)"><i class="fa fa-cart-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">קוצצנים</span>
+            <h4>סט חותכני עוגיות 20 צורות</h4>
+            <div class="stars">★★★★★ <span>(93)</span></div>
+            <div class="product-price">
+              <span class="price">₪39.90</span>
+              <span class="price-old">₪54.90</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGING -->
+  <section class="products section bg-light" id="packaging">
+    <div class="container">
+      <div class="section-header">
+        <h2>אריזות לעוגות</h2>
+        <a href="packaging.html" class="see-all">לכל האריזות <i class="fa fa-arrow-left"></i></a>
+      </div>
+      <div class="products-grid" id="pkg-grid">
+        <!-- loaded dynamically -->
+        <div class="product-card" style="display:none">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1562440499-64a3f0c30c5d?w=400&q=80" alt="קופסת עוגה" />
+            <div class="product-actions">
+              <button class="pact-btn"><i class="fa fa-heart"></i></button>
+              <button class="pact-btn" onclick="addToCart(this)"><i class="fa fa-cart-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">קופסאות</span>
+            <h4>קופסת עוגה לבנה עם חלון 25×25</h4>
+            <div class="stars">★★★★★ <span>(88)</span></div>
+            <div class="product-price"><span class="price">₪8.90</span></div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge sale">מבצע</div>
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?w=400&q=80" alt="קופסת קאפקייקס" />
+            <div class="product-actions">
+              <button class="pact-btn"><i class="fa fa-heart"></i></button>
+              <button class="pact-btn" onclick="addToCart(this)"><i class="fa fa-cart-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">קאפקייקס</span>
+            <h4>קופסת 6 קאפקייקס עם מגש</h4>
+            <div class="stars">★★★★☆ <span>(52)</span></div>
+            <div class="product-price">
+              <span class="price">₪6.50</span>
+              <span class="price-old">₪9.90</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1607478900766-efe13248b125?w=400&q=80" alt="מגש כסוף" />
+            <div class="product-actions">
+              <button class="pact-btn"><i class="fa fa-heart"></i></button>
+              <button class="pact-btn" onclick="addToCart(this)"><i class="fa fa-cart-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">מגשים</span>
+            <h4>מגש כסוף עגול 30 ס"מ – 10 יח'</h4>
+            <div class="stars">★★★★★ <span>(143)</span></div>
+            <div class="product-price"><span class="price">₪22.90</span></div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=400&q=80" alt="סרט סאטן" />
+            <div class="product-actions">
+              <button class="pact-btn"><i class="fa fa-heart"></i></button>
+              <button class="pact-btn" onclick="addToCart(this)"><i class="fa fa-cart-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">סרטים</span>
+            <h4>סרט סאטן 5 ס"מ – 9 מטר</h4>
+            <div class="stars">★★★★☆ <span>(29)</span></div>
+            <div class="product-price"><span class="price">₪12.90</span></div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge">חדש</div>
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1605792657660-596af9009e82?w=400&q=80" alt="שקית סלופן" />
+            <div class="product-actions">
+              <button class="pact-btn"><i class="fa fa-heart"></i></button>
+              <button class="pact-btn" onclick="addToCart(this)"><i class="fa fa-cart-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">סלופן</span>
+            <h4>שקיות סלופן מעוטרות 50 יח'</h4>
+            <div class="stars">★★★★★ <span>(67)</span></div>
+            <div class="product-price"><span class="price">₪18.90</span></div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400&q=80" alt="נייר אפייה" />
+            <div class="product-actions">
+              <button class="pact-btn"><i class="fa fa-heart"></i></button>
+              <button class="pact-btn" onclick="addToCart(this)"><i class="fa fa-cart-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">ניירות</span>
+            <h4>נייר אפייה מגולגל 50 מטר</h4>
+            <div class="stars">★★★★★ <span>(201)</span></div>
+            <div class="product-price"><span class="price">₪24.90</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RECIPES -->
+  <section class="recipes section" id="recipes">
+    <div class="container">
+      <div class="section-header">
+        <h2>מתכונים מומלצים</h2>
+        <a href="recipes.html" class="see-all">לכל המתכונים <i class="fa fa-arrow-left"></i></a>
+      </div>
+      <div class="recipes-grid">
+
+        <article class="recipe-card recipe-featured">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700&q=80" alt="עוגת שוקולד" />
+          <div class="recipe-info">
+            <div class="recipe-tags">
+              <span class="tag">עוגות</span>
+              <span class="tag">שוקולד</span>
+            </div>
+            <h3>עוגת שוקולד מושלמת ולחה</h3>
+            <p>עוגת השוקולד הכי טובה שתכינו - רכה, לחה ועם טעם שוקולד עמוק</p>
+            <div class="recipe-meta">
+              <span><i class="fa fa-clock"></i> 45 דקות</span>
+              <span><i class="fa fa-star"></i> קלה</span>
+              <span><i class="fa fa-users"></i> 12 מנות</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-sm">למתכון המלא</a>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=400&q=80" alt="קאפקייקס" />
+          <div class="recipe-info">
+            <div class="recipe-tags"><span class="tag">קאפקייקס</span></div>
+            <h3>קאפקייקס וניל עם קרם חמאה</h3>
+            <div class="recipe-meta">
+              <span><i class="fa fa-clock"></i> 30 דקות</span>
+              <span><i class="fa fa-star"></i> קלה</span>
+            </div>
+            <a href="#" class="btn btn-outline btn-sm">למתכון</a>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=80" alt="מקרונס" />
+          <div class="recipe-info">
+            <div class="recipe-tags"><span class="tag">מקרונס</span></div>
+            <h3>מקרונס צרפתיים קלאסיים</h3>
+            <div class="recipe-meta">
+              <span><i class="fa fa-clock"></i> 2 שעות</span>
+              <span><i class="fa fa-star"></i> מתקדם</span>
+            </div>
+            <a href="#" class="btn btn-outline btn-sm">למתכון</a>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <img src="https://images.unsplash.com/photo-1519869325930-281384150729?w=400&q=80" alt="עוגיות" />
+          <div class="recipe-info">
+            <div class="recipe-tags"><span class="tag">עוגיות</span></div>
+            <h3>עוגיות שוקולד צ'יפס קריספיות</h3>
+            <div class="recipe-meta">
+              <span><i class="fa fa-clock"></i> 25 דקות</span>
+              <span><i class="fa fa-star"></i> קלה</span>
+            </div>
+            <a href="#" class="btn btn-outline btn-sm">למתכון</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container newsletter-inner">
+      <div class="newsletter-text">
+        <h2>הירשמו לניוזלטר שלנו</h2>
+        <p>קבלו מתכונים חדשים, טיפים מקצועיים ומבצעים בלעדיים ישירות למייל</p>
+      </div>
+      <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+        <input type="email" placeholder="הכניסו את כתובת המייל שלכם" required />
+        <button type="submit" class="btn btn-primary">הרשמה</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo">
+          <span class="logo-icon">🎂</span>
+          <div class="logo-text">
+            <span class="logo-main" style="color:#fff">לונה</span>
+            <span class="logo-sub" style="color:#ccc">עולם של אפייה</span>
+          </div>
+        </div>
+        <p class="footer-desc">אנחנו מספקים חומרי גלם, כלים ואריזות לכל רמות האפייה — מהאפייה הביתית ועד המקצועית.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>קטגוריות</h4>
+        <ul>
+          <li><a href="raw-materials.html">חומרי גלם</a></li>
+          <li><a href="tools.html">כלי עבודה</a></li>
+          <li><a href="packaging.html">אריזות לעוגות</a></li>
+          <li><a href="recipes.html">מתכונים</a></li>
+          <li><a href="#sale">מבצעים</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>שירות לקוחות</h4>
+        <ul>
+          <li><a href="#">אודות</a></li>
+          <li><a href="#">צור קשר</a></li>
+          <li><a href="#">מדיניות משלוחים</a></li>
+          <li><a href="#">מדיניות החזרות</a></li>
+          <li><a href="#">שאלות נפוצות</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>צור קשר</h4>
+        <ul class="contact-list">
+          <li><i class="fa fa-map-marker-alt"></i> רוטשילד 25, תל אביב</li>
+          <li><i class="fa fa-phone"></i> 03-1234567</li>
+          <li><i class="fa fa-envelope"></i> info@luna-baking.co.il</li>
+          <li><i class="fa fa-clock"></i> א'–ה' 09:00–18:00</li>
+        </ul>
+        <a href="https://wa.me/9721234567" class="whatsapp-btn">
+          <i class="fab fa-whatsapp"></i> וואטסאפ
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 LUNA | לונה. כל הזכויות שמורות.</p>
+        <div class="footer-links">
+          <a href="#">מדיניות פרטיות</a>
+          <a href="#">תנאי שימוש</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART TOAST -->
+  <div class="toast" id="toast">
+    <i class="fa fa-check-circle"></i> המוצר נוסף לסל!
+  </div>
+
+  <!-- CART DRAWER -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <h3>סל הקניות</h3>
+      <button class="cart-drawer-close" id="cart-drawer-close"><i class="fa fa-xmark"></i></button>
+    </div>
+    <div class="cart-drawer-items" id="cart-drawer-items"></div>
+    <div class="cart-drawer-footer" id="cart-drawer-footer"></div>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="back-to-top" aria-label="חזור למעלה">
+    <i class="fa fa-chevron-up"></i>
+  </button>
+
+  <script src="/products-data.js"></script>
+  <script src="components.js"></script>
+  <script src="script.js"></script>
+  <script>
+    document.querySelector('.cart-btn').addEventListener('click', openCartDrawer);
+    document.getElementById('cart-drawer-close').addEventListener('click', closeCartDrawer);
+    document.getElementById('cart-overlay').addEventListener('click', closeCartDrawer);
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const cfg = window.LUNA_CONFIG || {};
+
+      // ── Apply site config ──────────────────────────────────────────────────
+      if (cfg.site) {
+        const s = cfg.site;
+        // Top bar shipping text
+        const topShip = document.querySelector('.top-bar span:first-child');
+        if (topShip && s.shippingText) topShip.innerHTML = `<i class="fa fa-truck"></i> ${s.shippingText}`;
+        const topPhone = document.querySelector('.top-bar span:nth-child(2)');
+        if (topPhone && s.phone) topPhone.innerHTML = `<i class="fa fa-phone"></i> ${s.phone}`;
+        const topHours = document.querySelector('.top-bar span:nth-child(3)');
+        if (topHours && s.hours) topHours.innerHTML = `<i class="fa fa-clock"></i> ${s.hours}`;
+        // Logo
+        document.querySelectorAll('.logo-main').forEach(el => { if(s.name) el.textContent = s.name; });
+        document.querySelectorAll('.logo-sub').forEach(el => { if(s.tagline) el.textContent = s.tagline; });
+        // Title
+        if (s.name) document.title = `LUNA | ${s.name} - ${s.tagline||''}`;
+      }
+
+      // ── Apply hero slides ──────────────────────────────────────────────────
+      if (cfg.hero && cfg.hero.length) {
+        const slides = document.querySelectorAll('.hero-slide');
+        cfg.hero.forEach((h, i) => {
+          const slide = slides[i];
+          if (!slide) return;
+          if (h.image) slide.style.backgroundImage = `url('${h.image}')`;
+          const badge = slide.querySelector('.hero-badge');
+          if (badge && h.badge) badge.textContent = h.badge;
+          const title = slide.querySelector('h1');
+          if (title && h.title) title.innerHTML = h.title.replace(/\n/g, '<br/>');
+          const sub = slide.querySelector('p');
+          if (sub && h.subtitle) sub.textContent = h.subtitle;
+          const btns = slide.querySelectorAll('.hero-btns .btn');
+          if (btns[0] && h.btn1Text) { btns[0].textContent = h.btn1Text; btns[0].href = h.btn1Url||'#'; }
+          if (btns[1]) {
+            if (h.btn2Text) { btns[1].textContent = h.btn2Text; btns[1].href = h.btn2Url||'#'; btns[1].style.display=''; }
+            else btns[1].style.display = 'none';
+          }
+        });
+      }
+
+      // ── Apply mid-banner ───────────────────────────────────────────────────
+      if (cfg.midBanner) {
+        const mb = cfg.midBanner;
+        const sec = document.getElementById('sale');
+        if (sec) {
+          const inner = sec.querySelector('.mid-banner-inner');
+          if (inner && mb.image) inner.style.backgroundImage = `url('${mb.image}')`;
+          const badge = sec.querySelector('.hero-badge');
+          if (badge && mb.badge) badge.textContent = mb.badge;
+          const h2 = sec.querySelector('h2');
+          if (h2 && mb.title) h2.textContent = mb.title;
+          const p = sec.querySelector('p');
+          if (p && mb.subtitle) p.textContent = mb.subtitle;
+          const btn = sec.querySelector('.btn');
+          if (btn) { if(mb.btnText) btn.textContent = mb.btnText; if(mb.btnUrl) btn.href = mb.btnUrl; }
+        }
+      }
+
+      // ── Populate product grids ─────────────────────────────────────────────
+      updateCartDisplay();
+      const rawGrid   = document.getElementById('raw-grid');
+      const toolsGrid = document.getElementById('tools-grid');
+      const pkgGrid   = document.getElementById('pkg-grid');
+      if (rawGrid)   rawGrid.innerHTML   = getProductsByCategory('raw').slice(0,6).map(productCardHTML).join('');
+      if (toolsGrid) toolsGrid.innerHTML = getProductsByCategory('tools').slice(0,6).map(productCardHTML).join('');
+      if (pkgGrid)   pkgGrid.innerHTML   = getProductsByCategory('packaging').slice(0,6).map(productCardHTML).join('');
+
+      // ── Animate on scroll ──────────────────────────────────────────────────
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; obs.unobserve(e.target); }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.product-card, .recipe-card, .cat-card, .trust-item').forEach(el => {
+        el.style.opacity = '0'; el.style.transform = 'translateY(24px)';
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        obs.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>

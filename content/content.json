@@ -1,0 +1,53 @@
+{
+  "site": {
+    "name": "לונה",
+    "tagline": "עולם של אפייה עולמית",
+    "phone": "03-1234567",
+    "email": "info@luna-baking.co.il",
+    "address": "רוטשילד 25, תל אביב",
+    "hours": "א'-ה' 09:00–18:00",
+    "shippingText": "משלוח חינם בקנייה מעל ₪250",
+    "whatsapp": "9721234567",
+    "footerDesc": "חומרי גלם, כלים ואריזות לכל רמות האפייה."
+  },
+  "hero": [
+    {
+      "badge": "חדש באתר",
+      "title": "עולם שלם של אפייה\nבמקום אחד",
+      "subtitle": "חומרי גלם איכותיים, כלי עבודה מקצועיים ואריזות מרהיבות",
+      "btn1Text": "לקטלוג המוצרים",
+      "btn1Url": "#categories",
+      "btn2Text": "מתכונים בחינם",
+      "btn2Url": "recipes.html",
+      "image": "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=1600&q=80"
+    },
+    {
+      "badge": "מבצע השבוע",
+      "title": "שוקולד ואבקות\nבמחירים מיוחדים",
+      "subtitle": "עד 30% הנחה על מבחר חומרי גלם נבחרים",
+      "btn1Text": "למבצעים",
+      "btn1Url": "#sale",
+      "btn2Text": "",
+      "btn2Url": "",
+      "image": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=1600&q=80"
+    },
+    {
+      "badge": "אריזות",
+      "title": "אריזות לעוגות\nמעוצבות ואלגנטיות",
+      "subtitle": "קופסאות, מגשים ורדידים לכל אירוע",
+      "btn1Text": "לאריזות",
+      "btn1Url": "packaging.html",
+      "btn2Text": "",
+      "btn2Url": "",
+      "image": "https://images.unsplash.com/photo-1491821893533-80f535044695?w=1600&q=80"
+    }
+  ],
+  "midBanner": {
+    "badge": "מבצע מוגבל בזמן",
+    "title": "עד 30% הנחה על אריזות לעוגות",
+    "subtitle": "מבחר רחב של קופסאות, מגשים וסלופן בעיצובים מרהיבים",
+    "btnText": "קנה עכשיו",
+    "btnUrl": "packaging.html",
+    "image": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=1400&q=80"
+  }
+}

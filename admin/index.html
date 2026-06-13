@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ניהול | לונה</title>
+  <link rel="stylesheet" href="admin.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body class="admin-body">
+
+  <!-- LOGIN SCREEN -->
+  <div class="login-screen" id="login-screen">
+    <div class="login-card">
+      <div class="login-logo">🎂</div>
+      <h1>לונה — מערכת ניהול</h1>
+      <p>הזינו סיסמה לכניסה לפאנל הניהול</p>
+      <form id="login-form">
+        <input type="password" id="login-pw" placeholder="סיסמה" autocomplete="current-password"/>
+        <button type="submit" class="btn-login">כניסה</button>
+        <div class="login-error" id="login-error">סיסמה שגויה</div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ADMIN SHELL (hidden until login) -->
+  <div class="admin-shell" id="admin-shell" style="display:none">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <span class="brand-icon">🎂</span>
+        <div>
+          <div class="brand-name">לונה Admin</div>
+          <div class="brand-sub">מערכת ניהול</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a class="nav-link active" data-section="settings" href="#">
+          <i class="fa fa-sliders"></i> הגדרות אתר
+        </a>
+        <a class="nav-link" data-section="hero" href="#">
+          <i class="fa fa-images"></i> סליידר ראשי
+        </a>
+        <a class="nav-link" data-section="products" href="#">
+          <i class="fa fa-box-open"></i> מוצרים
+        </a>
+        <a class="nav-link" data-section="banner" href="#">
+          <i class="fa fa-bullhorn"></i> באנר מבצע
+        </a>
+        <a class="nav-link" data-section="images" href="#">
+          <i class="fa fa-photo-film"></i> ספריית תמונות
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="/" target="_blank" class="preview-link">
+          <i class="fa fa-eye"></i> תצוגת האתר
+        </a>
+        <button class="logout-btn" id="logout-btn">
+          <i class="fa fa-right-from-bracket"></i> יציאה
+        </button>
+      </div>
+    </aside>
+
+    <!-- MAIN AREA -->
+    <div class="admin-main">
+
+      <!-- TOP BAR -->
+      <header class="admin-topbar">
+        <button class="sidebar-toggle" id="sidebar-toggle">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="topbar-title" id="topbar-title">הגדרות אתר</div>
+        <div class="topbar-actions">
+          <div class="save-indicator" id="save-indicator"></div>
+          <button class="btn-save" id="global-save-btn">
+            <i class="fa fa-floppy-disk"></i> שמור שינויים
+          </button>
+        </div>
+      </header>
+
+      <!-- SECTIONS -->
+      <div class="admin-content">
+
+        <!-- ── SITE SETTINGS ── -->
+        <section class="admin-section active" id="section-settings">
+          <div class="section-header">
+            <h2><i class="fa fa-sliders"></i> הגדרות אתר</h2>
+            <p>שם, יצירת קשר ומידע כללי</p>
+          </div>
+          <div class="card-grid">
+            <div class="card">
+              <div class="card-title">זהות האתר</div>
+              <div class="field-row">
+                <label>שם האתר</label>
+                <input type="text" data-path="site.name" placeholder="לונה"/>
+              </div>
+              <div class="field-row">
+                <label>תגית (Tagline)</label>
+                <input type="text" data-path="site.tagline" placeholder="עולם של אפייה"/>
+              </div>
+              <div class="field-row">
+                <label>טקסט סרגל עליון (משלוח)</label>
+                <input type="text" data-path="site.shippingText"/>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">פרטי קשר</div>
+              <div class="field-row">
+                <label>טלפון</label>
+                <input type="text" data-path="site.phone"/>
+              </div>
+              <div class="field-row">
+                <label>מייל</label>
+                <input type="email" data-path="site.email"/>
+              </div>
+              <div class="field-row">
+                <label>כתובת</label>
+                <input type="text" data-path="site.address"/>
+              </div>
+              <div class="field-row">
+                <label>שעות פעילות</label>
+                <input type="text" data-path="site.hours"/>
+              </div>
+              <div class="field-row">
+                <label>וואטסאפ (מספר בלבד)</label>
+                <input type="text" data-path="site.whatsapp"/>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">פוטר</div>
+              <div class="field-row">
+                <label>תיאור קצר בפוטר</label>
+                <textarea data-path="site.footerDesc" rows="3"></textarea>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── HERO SLIDER ── -->
+        <section class="admin-section" id="section-hero">
+          <div class="section-header">
+            <h2><i class="fa fa-images"></i> סליידר ראשי</h2>
+            <p>ערכו את 3 השקופיות של הסליידר בדף הבית</p>
+          </div>
+          <div id="hero-slides-container"></div>
+        </section>
+
+        <!-- ── PRODUCTS ── -->
+        <section class="admin-section" id="section-products">
+          <div class="section-header">
+            <h2><i class="fa fa-box-open"></i> ניהול מוצרים</h2>
+            <p>לחצו על מוצר לעריכה מלאה</p>
+          </div>
+
+          <!-- Product filters -->
+          <div class="prod-filter-row">
+            <div class="prod-search-wrap">
+              <i class="fa fa-search"></i>
+              <input type="text" id="prod-search" placeholder="חפש מוצר..."/>
+            </div>
+            <select id="prod-cat-filter">
+              <option value="">כל הקטגוריות</option>
+              <option value="raw">חומרי גלם</option>
+              <option value="tools">כלי עבודה</option>
+              <option value="packaging">אריזות</option>
+            </select>
+            <button class="btn-add-product" id="add-product-btn">
+              <i class="fa fa-plus"></i> מוצר חדש
+            </button>
+          </div>
+
+          <div class="products-table-wrap">
+            <table class="products-table">
+              <thead>
+                <tr>
+                  <th>תמונה</th>
+                  <th>שם המוצר</th>
+                  <th>קטגוריה</th>
+                  <th>מחיר</th>
+                  <th>תג</th>
+                  <th>פעולות</th>
+                </tr>
+              </thead>
+              <tbody id="products-tbody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ── BANNER ── -->
+        <section class="admin-section" id="section-banner">
+          <div class="section-header">
+            <h2><i class="fa fa-bullhorn"></i> באנר מבצע</h2>
+            <p>הבאנר האמצעי בדף הבית</p>
+          </div>
+          <div class="card-grid">
+            <div class="card" style="grid-column:1/-1">
+              <div class="card-title">תוכן הבאנר</div>
+              <div class="field-row">
+                <label>תגית עליונה</label>
+                <input type="text" data-path="midBanner.badge"/>
+              </div>
+              <div class="field-row">
+                <label>כותרת</label>
+                <input type="text" data-path="midBanner.title"/>
+              </div>
+              <div class="field-row">
+                <label>תת-כותרת</label>
+                <input type="text" data-path="midBanner.subtitle"/>
+              </div>
+              <div class="field-row two-col">
+                <div>
+                  <label>טקסט כפתור</label>
+                  <input type="text" data-path="midBanner.btnText"/>
+                </div>
+                <div>
+                  <label>קישור כפתור</label>
+                  <input type="text" data-path="midBanner.btnUrl"/>
+                </div>
+              </div>
+              <div class="field-row">
+                <label>כתובת תמונת רקע (URL)</label>
+                <div class="img-url-row">
+                  <input type="text" data-path="midBanner.image" class="img-url-input"/>
+                  <button class="btn-pick-img" data-target="midBanner.image">
+                    <i class="fa fa-image"></i> בחר מהספרייה
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── IMAGES ── -->
+        <section class="admin-section" id="section-images">
+          <div class="section-header">
+            <h2><i class="fa fa-photo-film"></i> ספריית תמונות</h2>
+            <p>העלו תמונות חדשות ונהלו את הספרייה</p>
+          </div>
+
+          <div class="upload-zone" id="upload-zone">
+            <input type="file" id="file-input" accept="image/*" multiple style="display:none"/>
+            <i class="fa fa-cloud-arrow-up upload-icon"></i>
+            <p>גררו תמונות לכאן, או</p>
+            <button class="btn-upload" id="browse-btn">בחרו קובץ</button>
+            <p class="upload-hint">JPG, PNG, WEBP — עד 8MB</p>
+          </div>
+          <div class="upload-progress" id="upload-progress" style="display:none">
+            <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+            <span id="progress-text">מעלה...</span>
+          </div>
+
+          <div class="gallery-grid" id="gallery-grid"></div>
+        </section>
+
+      </div><!-- /admin-content -->
+    </div><!-- /admin-main -->
+  </div><!-- /admin-shell -->
+
+  <!-- PRODUCT EDIT MODAL -->
+  <div class="modal-backdrop" id="modal-backdrop" style="display:none">
+    <div class="modal" id="product-modal">
+      <div class="modal-header">
+        <h3 id="modal-title">עריכת מוצר</h3>
+        <button class="modal-close" id="modal-close"><i class="fa fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-grid">
+
+          <!-- LEFT: Image + basic -->
+          <div class="modal-left">
+            <div class="prod-img-preview">
+              <img id="modal-img-preview" src="" alt=""/>
+              <div class="prod-img-overlay">
+                <button class="btn-change-img" id="modal-pick-img">
+                  <i class="fa fa-image"></i> שנה תמונה
+                </button>
+              </div>
+            </div>
+            <div class="field-row" style="margin-top:12px">
+              <label>URL תמונה</label>
+              <input type="text" id="modal-image" placeholder="https://..."/>
+            </div>
+            <div class="field-row">
+              <label>קטגוריה</label>
+              <select id="modal-categoryId">
+                <option value="raw">חומרי גלם</option>
+                <option value="tools">כלי עבודה</option>
+                <option value="packaging">אריזות</option>
+              </select>
+            </div>
+            <div class="field-row two-col">
+              <div>
+                <label>מחיר (₪)</label>
+                <input type="number" id="modal-price" step="0.01" min="0"/>
+              </div>
+              <div>
+                <label>מחיר לפני הנחה</label>
+                <input type="number" id="modal-old-price" step="0.01" min="0" placeholder="ריק = ללא"/>
+              </div>
+            </div>
+            <div class="field-row two-col">
+              <div>
+                <label>תג (badge)</label>
+                <select id="modal-badge">
+                  <option value="">ללא</option>
+                  <option value="חדש">חדש</option>
+                  <option value="מבצע">מבצע</option>
+                  <option value="פופולרי">פופולרי</option>
+                </select>
+              </div>
+              <div>
+                <label>כוכבים (1-5)</label>
+                <input type="number" id="modal-stars" min="1" max="5"/>
+              </div>
+            </div>
+            <div class="field-row two-col">
+              <div>
+                <label>מק"ט</label>
+                <input type="text" id="modal-sku"/>
+              </div>
+              <div>
+                <label>משקל / כמות</label>
+                <input type="text" id="modal-weight"/>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Text fields + TipTap -->
+          <div class="modal-right">
+            <div class="field-row">
+              <label>שם המוצר</label>
+              <input type="text" id="modal-name" placeholder="שם המוצר"/>
+            </div>
+
+            <div class="field-row">
+              <label>תיאור (WYSIWYG)</label>
+              <div class="tiptap-toolbar" id="tiptap-toolbar">
+                <button type="button" data-cmd="bold" title="מודגש"><i class="fa fa-bold"></i></button>
+                <button type="button" data-cmd="italic" title="נטוי"><i class="fa fa-italic"></i></button>
+                <button type="button" data-cmd="underline" title="קו תחתון"><i class="fa fa-underline"></i></button>
+                <span class="toolbar-sep"></span>
+                <button type="button" data-cmd="h2" title="כותרת גדולה">H2</button>
+                <button type="button" data-cmd="h3" title="כותרת קטנה">H3</button>
+                <span class="toolbar-sep"></span>
+                <button type="button" data-cmd="bulletList" title="רשימת נקודות"><i class="fa fa-list-ul"></i></button>
+                <button type="button" data-cmd="orderedList" title="רשימה ממוספרת"><i class="fa fa-list-ol"></i></button>
+                <span class="toolbar-sep"></span>
+                <button type="button" data-cmd="clearFormat" title="נקה עיצוב"><i class="fa fa-text-slash"></i></button>
+              </div>
+              <div class="tiptap-editor" id="tiptap-editor"></div>
+            </div>
+
+            <div class="field-row">
+              <label>רכיבים (שורה לכל רכיב)</label>
+              <textarea id="modal-ingredients" rows="5" placeholder="רכיב 1&#10;רכיב 2&#10;רכיב 3"></textarea>
+            </div>
+
+            <div class="field-row">
+              <label>טיפ מקצועי</label>
+              <textarea id="modal-tips" rows="3" placeholder="טיפ..."></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-danger" id="modal-delete-btn">
+          <i class="fa fa-trash"></i> מחק מוצר
+        </button>
+        <div style="flex:1"></div>
+        <button class="btn-secondary" id="modal-cancel-btn">ביטול</button>
+        <button class="btn-primary" id="modal-save-btn">
+          <i class="fa fa-floppy-disk"></i> שמור מוצר
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMAGE PICKER MODAL -->
+  <div class="modal-backdrop" id="picker-backdrop" style="display:none">
+    <div class="modal modal-sm" id="picker-modal">
+      <div class="modal-header">
+        <h3>בחרו תמונה מהספרייה</h3>
+        <button class="modal-close" id="picker-close"><i class="fa fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="gallery-grid picker-grid" id="picker-grid"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>
